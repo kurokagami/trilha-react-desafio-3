@@ -71,3 +71,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Project Figma
 https://www.figma.com/design/fvjQQNtqaUdpuNixvCZVav/DIO-CLONE?node-id=0-1&node-type=canvas&t=oAlgkhZUlTSS3gju-0
+
+<details>
+
+### Implementações by KuroKagami
+Componente de Redirecionamento (Redirect)<br/>
+Criação de page para cadastrar usuários (Register)<br/>
+Imput Ajustado<br/>
+Login e Register = Tratamento de Erro e Redirect<br/>
+Api host alterado para 3001, visando rodar json-server simultaneo com react-scripts (host=3000)<br/>

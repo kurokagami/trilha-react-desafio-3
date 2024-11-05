@@ -3,12 +3,13 @@ import { MdEmail, MdLock } from 'react-icons/md'
 import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
 import { Input } from '../../components/Input';
+import { Redirect } from '../../components/Redirect';
 import { api } from '../../services/api';
 
 import { useForm } from "react-hook-form";
 
 
-import { Container, Title, Column, TitleLogin, SubtitleLogin, EsqueciText, CriarText, Row, Wrapper } from './styles';
+import { Container, Title, Column, TitleLogin, SubtitleLogin, EsqueciText, Row, Wrapper } from './styles';
 
 const Login = () => {
 
@@ -31,6 +32,8 @@ const Login = () => {
             alert('Usuário ou senha inválido')
         }catch(e){
             //TODO: HOUVE UM ERRO
+            console.error('Erro ao logar:', e);
+            alert(`Falha ao Logar`);
         }
     };
 
@@ -56,7 +59,7 @@ const Login = () => {
                 </form>
                 <Row>
                     <EsqueciText>Esqueci minha senha</EsqueciText>
-                    <CriarText>Criar Conta</CriarText>
+                    <Redirect title="Criar Conta" href="/register"/>
                 </Row>
                 </Wrapper>
             </Column>
